@@ -1,9 +1,9 @@
 import {Link} from "react-router-dom";
 
 export default function SearchResults({ amiibos, searchString}) {
-    // if (amiibos.character) {
-    //     return <h2>No Amiibos Found</h2>
-    // }
+    if (amiibos === undefined) {
+        return <h1>No Amiibos Found!</h1>
+    }
     return(
         <div>
             {amiibos.map((amiibo, i) => {

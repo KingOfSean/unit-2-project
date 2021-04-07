@@ -1,6 +1,9 @@
 import {Link} from "react-router-dom";
 
 export default function Details({amiibo}) {
+    if (amiibo === undefined) {
+        return <h2>No Amiibos Found</h2>
+    }
     return(
         <div>
             <header>

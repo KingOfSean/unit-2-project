@@ -35,8 +35,8 @@ export default function App () {
       setAmiibos(data.amiibo); // i have the amiibo array
       setLastSearch(searchString);
       setSearchString("");
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.error(error);
     }
   };
   
@@ -70,7 +70,7 @@ export default function App () {
         <Route path="/searchresults" render={() => 
         <Fragment>
           <Search handleChange={handleChange} handleSubmit={handleSubmit} searchString={searchString}/> 
-          <SearchResults amiibos={amiibos} /> 
+          <SearchResults amiibos={amiibos} searchString={searchString} /> 
         </Fragment> }/>
 
         <Route path="/amiibo/:tail" render={routerProps => {
