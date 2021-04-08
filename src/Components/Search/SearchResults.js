@@ -1,22 +1,27 @@
 import {Link} from "react-router-dom";
 import "./SearchResults.css";
 
-export default function SearchResults({ amiibos, searchString}) {
+export default function SearchResults({ amiibos, handleChange}) {
     const audio = new Audio("/Sounds/switch-sound.mp3");
     const start = () => {
-    audio.play();
+        audio.play();
   }
   
   const hover = new Audio("/Sounds/Klick.mp3");
     const startKlick = () => {
-    hover.play();
+        hover.play();
   }
+
+  const ohno = new Audio("/Sounds/ohno.wav");
+    const startOhno = () => {
+        ohno.play();
+    }    
 
     if (amiibos === undefined) {
         return (
             <div>
                 <h1 className="error">No Amiibos Found!</h1>
-                <img src="/Logo/undefined.png" height="417px" />
+                <img src="/Logo/undefined.png" height="417px" onLoad={startOhno} />
             </div>
         ) 
         
