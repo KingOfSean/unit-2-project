@@ -1,14 +1,16 @@
 import {Link} from "react-router-dom";
+import "../Details/Details.css";
 
 export default function Details({amiibo}) {
-    if (amiibo === undefined) {
-        return <h2>No Amiibos Found</h2>
-    }
+    // if (amiibo.release === undefined) {
+    //     return <h2>N/A</h2>
+    // }
     return(
-        <div>
+        <div className="details">
             <header>
                 <h1>{amiibo.name}</h1>
             </header>
+            <div className="content">  
             <section>
                 <div>
                     <h2>Amiibo Series</h2>
@@ -32,10 +34,16 @@ export default function Details({amiibo}) {
                     <p>{amiibo.type}</p>
                 </div>
             </section>
-            <div>
+            <div className="amiibo-image">
                 <img src={amiibo.image} alt={amiibo.altText}/>
             </div>
-            <Link to="/searchresults">Back To Search</Link>
         </div>
+            <div className="return-search">
+                <Link to="/searchresults">
+                    <img src="/Logo/mario-with-shell.png" height="110px" />
+                <p>Back to Search</p>
+                </Link>
+            </div>
+            </div>
     )
 }

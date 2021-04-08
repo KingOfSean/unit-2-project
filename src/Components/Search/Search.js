@@ -1,5 +1,10 @@
+import pic from "../Images/guessbox.png";
 
 export default function Search({ handleSubmit, handleChange, searchString }) {
+  const audio = new Audio("/Sounds/coinsound.mp3");
+  const start = () => {
+    audio.play();
+  }
     return(
         <form onSubmit={handleSubmit} className="form-horizontal">
             <input
@@ -10,8 +15,8 @@ export default function Search({ handleSubmit, handleChange, searchString }) {
                 onChange={handleChange}
                 value={searchString}
       />
-      <button type="submit">
-        Submit
+      <button onClick={start} type="submit">
+        <img src={pic} height="50px" width="50px" />
       </button>
     </form>
     

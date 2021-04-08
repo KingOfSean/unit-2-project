@@ -5,6 +5,8 @@ import Details from "./Components/Details/Details";
 import SearchResults from "./Components/Search/SearchResults";
 import { useState, useEffect, Fragment } from "react";
 import Search from './Components/Search/Search';
+import logo2 from "./Components/Images/logo2.png";
+
 
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
@@ -59,11 +61,14 @@ export default function App () {
   console.log(amiibos);
 
   return (
-    <div>
+    <div className="app">
       <nav>
-        <Link to="/">
-          <h1>Amiibo Searcher</h1>
-        </Link>
+        <div className="nav-container">
+          <Link to="/">
+            <img src={logo2} />
+            <h1>Amiibo Searcher</h1>
+          </Link>
+        </div>
       </nav>
       <main>
         <Route path="/" exact component={Home} />
@@ -81,6 +86,10 @@ export default function App () {
           return <Details {...routerProps} amiibo={amiibo[0]} />
         }} />
       </main>
+      <footer>
+        <img src="/Logo/nintendologo.png" height="50px" />
+        <p>By: Sean King</p>
+      </footer>
     </div>
   )
 }

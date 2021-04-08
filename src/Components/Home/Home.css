@@ -1,0 +1,26 @@
+.homescreen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 75px;
+}
+
+
+
+.screen-logo img {
+    margin: 20px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    height: 100px;
+}
+
+
+.homescreen button {
+    align-self: flex-end;
+    margin-bottom: 172px;
+}
+
+
+.homescreen h1 {
+    margin-top: 0;
+}

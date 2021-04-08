@@ -1,0 +1,36 @@
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    
+}
+
+
+.amiibo-image img {
+    height: 500px;
+    margin: 30px;
+    margin-top: 75px;
+    margin-left: 400px;
+}
+
+
+.return-search a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.return-search img {
+    transform: scaleX(-1);
+}
