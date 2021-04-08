@@ -13,7 +13,12 @@ export default function SearchResults({ amiibos, searchString}) {
   }
 
     if (amiibos === undefined) {
-        return <h1>No Amiibos Found!</h1>
+        return (
+            <div>
+                <h1 className="error">No Amiibos Found!</h1>
+                <img src="/Logo/undefined.png" height="417px" />
+            </div>
+        ) 
         
     }
     return(

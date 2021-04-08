@@ -79,6 +79,7 @@ export default function App () {
             <img src={logo2} />
             <h1>Amiibo Searcher</h1>
           </Link>
+          <img className="gif" src="/Logo/mario.gif"/>
         </div>
       </nav>
       <main>

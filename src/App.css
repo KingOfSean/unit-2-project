@@ -12,10 +12,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', end
   display: flex;
   background-image: radial-gradient(circle at -16.45% 25.82%, #ffff38 0, #fffc26 16.67%, #ffdb17 33.33%, #edb90c 50%, #d69807 66.67%, #c17c08 83.33%, #ae640b 100%);;
   color: white;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-shadow: 10px 5px 5px rgba(77, 77, 77, 0.5);
+  font-family: 'Press Start 2P', cursive;
 }
 
 nav img {
@@ -25,6 +26,13 @@ nav img {
   display: inline-block;
   vertical-align: middle;
 }
+
+
+.gif {
+  max-height: 300px;
+  justify-self: right;
+}
+
 
 nav h1 {
   padding: 10px;

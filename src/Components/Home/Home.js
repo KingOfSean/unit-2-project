@@ -5,9 +5,15 @@ import mario from "../Images/mario.png";
 
 export default function Home() {
     const audio = new Audio("/Sounds/sm64_mario_lets_go.wav");
-  const start = () => {
-    audio.play();
+    const start = () => {
+        audio.play();
   }
+
+  const hover = new Audio("/Sounds/Klick.mp3");
+    const startKlick = () => {
+        hover.play();
+    }
+
     return(
         <div className="homescreen" >
             <h1>Amiibo Searcher</h1>
@@ -16,7 +22,7 @@ export default function Home() {
                 <img src={mario}/>
             </div>
             <Link to="/searchresults">
-                <button onClick={start} >Enter</button>
+                <button onClick={start} onMouseOver={startKlick} >Enter</button>
             </Link>
         </div>
 

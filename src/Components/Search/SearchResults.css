@@ -7,7 +7,8 @@
     grid-template-columns: repeat(4, auto);
     grid-template-rows: auto; 
     box-sizing: border-box;
-    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 1rem 2rem rgba(77, 77, 77, 0.5);
 }
 
 .gallery img {
@@ -80,3 +81,7 @@ form button:active {
 }
 
 
+.error {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 1rem 2rem rgba(77, 77, 77, 0.5);
+}
