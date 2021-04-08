@@ -31,6 +31,12 @@
 }
 
 
-.return-search img {
-    transform: scaleX(-1);
+
+.return-search img:hover {
+    transform: translateY(-2px) translateX(-1);
+    box-shadow: 0 1rem 2rem rgba(77, 77, 77, 0.5);
 }
+
+
+
+

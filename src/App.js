@@ -60,11 +60,22 @@ export default function App () {
   
   console.log(amiibos);
 
+  const audio = new Audio("/Sounds/switch-sound.mp3");
+    const start = () => {
+    audio.play();
+    }
+
+    const hover = new Audio("/Sounds/Klick.mp3");
+    const startKlick = () => {
+    hover.play();
+    }
+
+
   return (
     <div className="app">
       <nav>
         <div className="nav-container">
-          <Link to="/">
+          <Link to="/" onMouseOver={startKlick} onClick={start} >
             <img src={logo2} />
             <h1>Amiibo Searcher</h1>
           </Link>

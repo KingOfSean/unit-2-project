@@ -2,9 +2,16 @@ import {Link} from "react-router-dom";
 import "../Details/Details.css";
 
 export default function Details({amiibo}) {
-    // if (amiibo.release === undefined) {
-    //     return <h2>N/A</h2>
-    // }
+    const audio = new Audio("/Sounds/switch-sound.mp3");
+    const start = () => {
+    audio.play();
+    }
+
+    const hover = new Audio("/Sounds/Klick.mp3");
+    const startKlick = () => {
+    hover.play();
+    }
+
     return(
         <div className="details">
             <header>
@@ -39,7 +46,7 @@ export default function Details({amiibo}) {
             </div>
         </div>
             <div className="return-search">
-                <Link to="/searchresults">
+                <Link to="/searchresults" onClick={start} onMouseOver={startKlick} >
                     <img src="/Logo/mario-with-shell.png" height="110px" />
                 <p>Back to Search</p>
                 </Link>
