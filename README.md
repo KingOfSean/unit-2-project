@@ -4,9 +4,9 @@
 I am creating an App that searches Nintendo Amiibos' and shows the user basic information about the Amiibo they searched for.
 
 ## Plans
-<img src = "/Logo/Screenshot 2021-04-09 at 1.58.52 PM.png"/>
-<img src = "/Logo/Screenshot 2021-04-09 at 2.05.08 PM.png"/>
-<img src = "/Logo/Screenshot 2021-04-09 at 2.06.58 PM.png"/>
+<img src = "/Logo/plan1.png"/>
+<img src = "/Logo/plan2.png"/>
+<img src = "/Logo/plan3.png"/>
 
 ## Technologies Used
 - React
@@ -20,7 +20,7 @@ I am creating an App that searches Nintendo Amiibos' and shows the user basic in
 
 2. API URL
     - "https://www.amiiboapi.com/api/amiibo/"
-    - <img src = "/Logo/Screenshot 2021-04-09 at 2.15.09 PM.png"/>
+    - <img src = "/Logo/api-example.png"/>
 
 ## Components Used
 - Home
