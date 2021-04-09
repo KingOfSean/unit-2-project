@@ -18,8 +18,8 @@ export default function Home() {
         <div className="homescreen" >
             <h1>Amiibo Searcher</h1>
             <div className="screen-logo" >
-                <img src={logo} />
-                <img src={mario}/>
+                <img id="amiibo-logo" src={logo} />
+                <img id="mario" src={mario}/>
             </div>
             <Link to="/searchresults">
                 <button onClick={start} onMouseOver={startKlick} >Enter</button>

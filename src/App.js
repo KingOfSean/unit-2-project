@@ -21,16 +21,9 @@ export default function App () {
   const [searchString, setSearchString] = useState("mario");
   const [lastSearch, setLastSearch] = useState("");
 
-  const searchOptions = {
-    name: searchString,
-    api: "https://www.amiiboapi.com/api/amiibo/",
-    character: searchString
-  };
-
-  
 
   const getAmiibos = async (searchString) => {
-    const url = `${searchOptions.api}?character=${searchOptions.character}`
+    const url = `https://www.amiiboapi.com/api/amiibo?character=${searchString}`;
     try{
       const res = await fetch(url);
       const data = await res.json();

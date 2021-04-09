@@ -32,7 +32,7 @@ export default function SearchResults({ amiibos, handleChange}) {
                 return (
                     <div>
                         <Link to={`/amiibo/${amiibo.tail}`} onClick={start} onMouseOver={startKlick} > 
-                            <img src={amiibo.image} alt={amiibo.image.altText}/>
+                            <img src={amiibo.image} alt={amiibo.image.tail}/>
                         </Link>
                         <p>{amiibo.name}</p>
                     </div>
