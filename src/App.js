@@ -69,7 +69,7 @@ export default function App () {
       <nav>
         <div className="nav-container">
           <Link to="/" onMouseOver={startKlick} onClick={start} >
-            <img src="../../../public/Images/logo2.png" />
+            <img src="/Images/logo2.png" />
             <h1>Amiibo Searcher</h1>
           </Link>
           <h2>{lastSearch}</h2>

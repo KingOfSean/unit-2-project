@@ -16,7 +16,7 @@ export default function Search({ handleSubmit, handleChange, searchString }) {
                 value={searchString}
       />
       <button onClick={start} type="submit">
-        <img src="../../../public/Images/guessbox.png" height="50px" width="50px" />
+        <img src="/Images/guessbox.png" height="50px" width="50px" />
       </button>
     </form>
     
