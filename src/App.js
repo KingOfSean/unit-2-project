@@ -1,11 +1,11 @@
 import './App.css';
-import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Route, Link } from 'react-router-dom'
 import Home from './Components/Home/Home';
 import Details from "./Components/Details/Details";
 import SearchResults from "./Components/Search/SearchResults";
 import { useState, useEffect, Fragment } from "react";
 import Search from './Components/Search/Search';
-import logo2 from "./Components/Images/logo2.png";
+
 
 
 // Save the Component, key and path in an array of objects for each Route
@@ -69,11 +69,11 @@ export default function App () {
       <nav>
         <div className="nav-container">
           <Link to="/" onMouseOver={startKlick} onClick={start} >
-            <img src={logo2} />
+            <img src="/Images/logo2.png" />
             <h1>Amiibo Searcher</h1>
           </Link>
           <h2>{lastSearch}</h2>
-          <img className="gif" src="/Logo/mario.gif"/>
+          <img className="gif" src="/Logo/mario.gif" alt="oh no!"/>
         </div>
       </nav>
       <main>
