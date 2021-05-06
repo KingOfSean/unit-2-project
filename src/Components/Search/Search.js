@@ -1,4 +1,4 @@
-import pic from "../Images/guessbox.png";
+
 
 export default function Search({ handleSubmit, handleChange, searchString }) {
   const audio = new Audio("/Sounds/coinsound.mp3");
@@ -16,7 +16,7 @@ export default function Search({ handleSubmit, handleChange, searchString }) {
                 value={searchString}
       />
       <button onClick={start} type="submit">
-        <img src={pic} height="50px" width="50px" />
+        <img src="../../../public/Images/guessbox.png" height="50px" width="50px" />
       </button>
     </form>
     
